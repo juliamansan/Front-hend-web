@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(24, 6, 90);
+    background-color: rgb(230, 213, 245);
+    padding: 2rem;
+}
+h1 {
+   text-align: center;
+   margin-bottom: 2rem;
+}
+h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+p {
+    opacity: 0.8;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+section {
+    background-color: rgb(203, 188, 231);
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0.5rem;
+    border: 0.125rem solid rgb(75, 8, 102);
+    text-align: center;
+}
+footer {
+    text-align: center;
+}
+.item{
+    color: rgb(123, 20, 220);
+    background-color: rgb(17, 40, 61);
+}
+.container-black .item{
+    display: block;
+    height: 100px;
+    margin: 0.5rem;
+}
+.container-inline .item{
+    display: inline-block;
+    width: 5rem;
+    padding: 0.5rem;
+}
+
+.container-flex {
+    display: flex;
+    background-color: rgb(210, 201, 245);
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.container-flex .item {
+    padding: 0.5rem;
+    flex-basis: 100px;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+#item-2 {
+    flex-grow: 2;
+}
+
+#item-3 {
+    flex-grow: 3;
+}
+
+.container-grid {
+    background-color: rgb(224, 215, 250);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(50px, auto);
+    gap: 0.5rem;
+}
+
+.container-grid .item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-grid-area {
+    display: grid;
+    grid-template-areas: 
+        "cabecalho cabecalho"
+        "principal artigo"
+        "rodape rodape";
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 4fr 0.5fr;
+    height: 500px;
+    gap: 0.5rem;
+}
+
+.container-grid-area div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-grid-area .item-cabecalho {
+    grid-area: cabecalho;
+    background-color: rgb(234, 215, 250);
+}
+
+.container-grid-area .item-principal {
+    grid-area: principal;
+    background-color: rgb(236, 196, 255);
+}
+
+.container-grid-area .item-artigo {
+    grid-area: artigo;
+    background-color: rgb(232, 212, 248);
+}
+
+.container-grid-area .item-rodape {
+    grid-area: principal;
+    background-color: rgb(215, 177, 250);
+}
