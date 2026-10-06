@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Chaveiros Pixel Art - Questionário</title>
+    <link rel="stylesheet" href="./styles/global.css">
+</head>
+<body>
+    <header>
+        <figure>
+      <img src="./images/pixel.jpg" alt="Pônei em pixel art com chapéu de cowboy em um campo, com o texto Pixel Leleca e Juju" />
+    </figure>
+        <h1>Loja de Chaveiros Pixel Art</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Monte seu chaveiro</h2>
+
+            <form action="https://postman-echo.com/post" method="post" enctype="multipart/form-data">
+
+                <p>Responda o questionário para pedir um chaveiro personalizado e nos ajudar a conhecer você.</p>
+
+                <fieldset>
+                    <legend>Dados do cliente</legend>
+                    <div>
+                        <label for="nome_id">Nome completo:</label>
+                        <input id="nome_id" name="nome" type="text" placeholder="Maria da Silva" required>
+                    </div>
+                    <div>
+                        <label for="telefone_id">Telefone (WhatsApp):</label>
+                        <input id="telefone_id" name="telefone" type="tel" required>
+                    </div>
+                    <div>
+                        <label for="email_id">Email:</label>
+                        <input id="email_id" name="email" type="email">
+                    </div>
+                    <div>
+                        <label for="cidade_id">Cidade-UF:</label>
+                        <input id="cidade_id" name="cidade" type="text" placeholder="Cambé-PR">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Tipo de pedido</legend>
+                    <div>
+                        <input id="personalizado_id"
+                               name="tipo_pedido"
+                               type="radio"
+                               value="personalizado"
+                               required>
+                        <label for="personalizado_id">Chaveiro personalizado (desenho exclusivo)</label>
+                    </div>
+                    <div>
+                        <input id="catalogo_id"
+                               name="tipo_pedido"
+                               type="radio"
+                               value="catalogo">
+                        <label for="catalogo_id">Modelo do catálogo</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Sobre o chaveiro</legend>
+                    <div>
+                        <label for="tema_id">Tema:</label>
+                        <select id="tema_id" name="tema">
+                            <option value="games">Games</option>
+                            <option value="animais">Animais</option>
+                            <option value="personagem_proprio">Personagem próprio / OC</option>
+                            <option value="comida">Comida</option>
+                            <option value="anime">Anime / desenho</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="tamanho_id">Tamanho:</label>
+                        <select id="tamanho_id" name="tamanho">
+                            <option value="pequeno">Pequeno (até 4 cm)</option>
+                            <option value="medio">Médio (5 a 6 cm)</option>
+                            <option value="grande">Grande (7 cm ou mais)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="quantidade_id">Quantidade:</label>
+                        <input id="quantidade_id" name="quantidade" type="number" min="1" value="1">
+                    </div>
+                    <div>
+                        <label for="referencia_id">Imagem de referência:</label>
+                        <input id="referencia_id" name="referencia" type="file" accept="image/*">
+                    </div>
+                    <div>
+                        <label for="descricao_id">Descreva o que você imagina:</label>
+                        <textarea id="descricao_id"
+                                  name="descricao"
+                                  rows="8"
+                                  cols="60"
+                                  placeholder="Cores, personagem, detalhes, frase..."></textarea>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Acabamento</legend>
+                    <div>
+                        <input id="glitter_id"
+                               name="acabamento"
+                               type="checkbox"
+                               value="glitter_">
+                        <label for="glitter_id">Glitter</label>
+                    </div>
+                    <div>
+                        <input id="textura_aveludada_id"
+                               name="acabamento"
+                               type="checkbox"
+                               value="textura_aveludada">
+                        <label for="textura_aveludada_id">Textura Aveludada</label>
+                    </div>
+                    <div>
+                        <input id="furos_visiveis_id"
+                               name="acabamento"
+                               type="checkbox"
+                               value="furos_visiveis">
+                        <label for="furos_visiveis_id">Furos Visíveis</label>
+                    </div>
+                    <div>
+                        <input id="liso_id"
+                               name="acabamento"
+                               type="checkbox"
+                               value="liso">
+                        <label for="liso_id">Liso</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Prazo e orçamento</legend>
+                    <div>
+                        <label for="prazo_id">Preciso do chaveiro até:</label>
+                        <input id="prazo_id" name="prazo" type="date">
+                    </div>
+                    <div>
+                        <p>Quanto pretende investir por unidade?</p>
+                        <div>
+                            <input id="preco_1_id"
+                                   name="faixa_preco"
+                                   type="radio"
+                                   value="ate_15">
+                            <label for="preco_1_id">Até R$ 15</label>
+                        </div>
+                        <div>
+                            <input id="preco_2_id"
+                                   name="faixa_preco"
+                                   type="radio"
+                                   value="15_30">
+                            <label for="preco_2_id">R$ 15 a R$ 30</label>
+                        </div>
+                        <div>
+                            <input id="preco_3_id"
+                                   name="faixa_preco"
+                                   type="radio"
+                                   value="acima_30">
+                            <label for="preco_3_id">Acima de R$ 30</label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Conte mais sobre você</legend>
+                    <div>
+                        <label for="conheceu_id">Como conheceu a loja?</label>
+                        <select id="conheceu_id" name="conheceu">
+                            <option value="instagram">Instagram</option>
+                            <option value="tiktok">TikTok</option>
+                            <option value="indicacao">Indicação de amigo</option>
+                            <option value="feira">Feira / evento</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="sugestao_id">Sugestão de tema ou modelo para o catálogo:</label>
+                        <textarea id="sugestao_id"
+                                  name="sugestao"
+                                  rows="4"
+                                  cols="60"></textarea>
+                    </div>
+                </fieldset>
+
+                <div>
+                    <button type="reset">Limpar dados</button>
+                    <button type="submit">Enviar pedido</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Todos os direitos reservados</p>
+    </footer>
+</body>
+  </html>

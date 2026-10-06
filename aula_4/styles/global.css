@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #02217c;
+    background-color: #bfe0f7;
+    padding: 1.25rem;
+    max-width: 50rem;
+    margin: auto;
+}
+
+header {
+    background-color: #6fb1ee;
+    color: #072170;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+header img {
+    width: 100%;
+    max-width: 18rem;
+    height: auto;
+    border-radius: 0.5rem;
+    border: 0.25rem solid #ff4f4f;
+    image-rendering: pixelated;
+}
+
+main {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    color: #2f4224;
+    background-color: #9bd16a;
+    border-radius: 0.5rem;
+}
+
+section {
+    line-height: 1.5rem;
+}
+
+section h2 {
+    color: #8f1f2b;
+    font-size: 1.25rem;
+}
+
+section p {
+    margin: 0.5rem 0;
+}
+
+fieldset {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #d9f0bd;
+    border: 0.125rem solid #6fae3a;
+    border-radius: 0.5rem;
+}
+
+legend {
+    color: #8f1f2b;
+    font-size: 1.125rem;
+    font-weight: bold;
+    padding: 0 0.5rem;
+}
+
+fieldset div {
+    margin-top: 0.75rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+    display: inline;
+    margin-left: 0.25rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: #d8484f;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="file"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-family: inherit;
+    color: #1f2433;
+    background-color: #fffdf3;
+    border: 0.125rem solid #6fae3a;
+    border-radius: 0.25rem;
+}
+
+input[type="file"] {
+    background-color: transparent;
+    border: none;
+    padding: 0.25rem 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 0.125rem solid #e8892c;
+}
+
+button {
+    margin-top: 1.5rem;
+    margin-right: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-family: inherit;
+    font-weight: bold;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    background-color: #6fb1ee;
+}
+
+button[type="reset"] {
+    background-color: #e8646b;
+}
+
+button:hover {
+    background-color: #f5c05a;
+    transition: 0.5s;
+}
+
+footer {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    text-align: center;
+    color: #ffffff;
+    background-color: #f79205;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
